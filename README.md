@@ -5,5 +5,5 @@ Diretrizes:
 
 * Criar uma página com os elementos:
  - carousel de imagens;
- - grid : desktop 3 itens por linha / tablet 2 itens / mbile 1 item;
+ - grid : desktop 3 itens por linha / tablet 2 itens / mobile 1 item;
  - em cada coluna deve ter um card.
