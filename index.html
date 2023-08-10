@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="./lib/bootstrap_5.3.0.min.css">
 
     <style>
-        h2 {
+        .page-title {
             display: flex;
             justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item img {
+            max-height: 325px;
         }
 
         .col-centered {
@@ -28,70 +34,68 @@
             padding-bottom: 0.5%;
         }
 
-        
         @media (min-width: 768px) {
+            .carousel-item img {
+                max-height: 425px;
+            }
             .truncated1 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
             }
             .truncated2 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
             }
             .truncated3 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 8;
+            }
+            .truncated1,
+            .truncated2,
+            .truncated3 {
                 -webkit-box-orient: vertical;
+                display: -webkit-box;
                 overflow: hidden;
             }
         }
         
         @media (min-width: 992px) {
-            .truncated1 {
-                display: none;
+            .carousel-item img {
+                max-height: 580px;
             }
+            .truncated1,
             .truncated2 {
                 display: none;
             }
             .truncated3 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 5;
                 -webkit-box-orient: vertical;
+                display: -webkit-box;
                 overflow: hidden;
             }
         }
         @media (min-width: 1200px) {
+            .carousel-item img {
+                max-height: 650px;
+            }
             .truncated1 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
             }
             .truncated2 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 5;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
             }
             .truncated3 {
-                /* max-lines: none; */
-                display: -webkit-box;
                 -webkit-line-clamp: 9;
+            }
+            .truncated1,
+            .truncated2,
+            .truncated3 {
                 -webkit-box-orient: vertical;
+                display: -webkit-box;
                 overflow: hidden;
             }
         }
         @media (min-width: 1400px) {
+            .carousel-item img {
+                max-height: 780px;
+            }
             .truncated1,
             .truncated2,
             .truncated3 {
@@ -104,8 +108,8 @@
 <body>
     <div class="container">
         <header class="row">
-            <div class="col-6 col-centered">
-                <h2>Exercício de Bootstrap</h2>
+            <div class="col g-2 col-centered">
+                <h2 class="page-title">Exercício de Bootstrap</h2>
 
                 <div id="carousel-painel" data-bs-ride="carousel" class="carousel carousel-fade slide">
                         <div class="carousel-inner">
@@ -165,7 +169,7 @@
         <section class="row">
             <div class="col-12 col-md-6 col-lg-4 justify-content-around g-2">
                 <article class="card">
-                    <img src="https://www.maladeaventuras.com/wp-content/uploads/2016/10/IMG_9701.jpg" alt="150x150" />
+                    <img src="https://www.maladeaventuras.com/wp-content/uploads/2016/10/IMG_9701.jpg" alt="deserto do Atacama" />
 
                     <div class="card-body">
                         <h3 class="card-title">Deserto do Atacama</h3>
@@ -211,14 +215,16 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 justify-content-around g-2">
                 <article class="card">
-                    <img src="./img/espaco_bilo.png" alt="150x150" />
+                    <img src="./img/espaco_bilo.png" alt="Espaço Biló" />
 
                     <div class="card-body">
                         <h3 class="card-title">Espaço Biló</h3>
                         <p class="card-text">
-                            um espaço onde gigantes do desenvolvimento pessoal podem promover atendimentos e experiências presenciais.
-                            -
-                            temos salas para oficinas, aulas, cursos, mesa para atendimentos e reuniões, além de estações individuais de trabalho.
+                            Um espaço onde gigantes do desenvolvimento pessoal podem promover atendimentos e experiências presenciais.
+                        </p>
+                        <p class="card-text">-</p>
+                        <p class="card-text">
+                            Temos salas para oficinas, aulas, cursos, mesa para atendimentos e reuniões, além de estações individuais de trabalho.
                         </p>
                         <a
                         href="https://www.instagram.com/espacobilo/"
